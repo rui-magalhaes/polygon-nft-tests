@@ -1,0 +1,33 @@
+{
+  "name": "polygon-nft-tests",
+  "version": "1.0.0",
+  "description": "A repository to explore NFT deployments on polygon",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rui-magalhaes/polygon-nft-tests.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rui-magalhaes/polygon-nft-tests/issues"
+  },
+  "homepage": "https://github.com/rui-magalhaes/polygon-nft-tests#readme",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "ethereum-waffle": "^3.4.0",
+    "ethers": "^5.4.7",
+    "hardhat": "^2.6.4"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.3.2",
+    "base64-sol": "^1.0.1",
+    "fs": "^0.0.1-security",
+    "hardhat-deploy": "^0.9.1",
+    "hardhat-waffle": "^0.0.1-security"
+  }
+}

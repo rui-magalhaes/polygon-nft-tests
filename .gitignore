@@ -1,0 +1,12 @@
+.video.md
+.article.md
+artifacts
+deployments
+node_modules
+.DS_Store
+yarn.lock
+.env
+
+#Hardhat files
+cache
+artifacts
