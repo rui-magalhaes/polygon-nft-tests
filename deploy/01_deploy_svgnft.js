@@ -24,7 +24,7 @@ module.exports = async({
 
     const svgNFTContract = await ethers.getContractFactory("SVGNFT")
     const accounts = await ethers.getSigners()
-    const signer = accounts[0]
+    const signer = accounts[1]
     const svgNFT = new ethers.Contract(SVGNFT.address, svgNFTContract.interface, signer)
     const networkName = networkConfig[chainId]['name']
     log(`Verify with: \n npx hardhat verify --network ${networkName} ${svgNFT.address}`)

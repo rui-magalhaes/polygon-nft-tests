@@ -19,6 +19,7 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
 require('dotenv').config()
 const RINKEBY_RPC_URL = process.env.RINKEBY_RPC_URL
 const GOERLI_RPC_URL = process.env.GOERLI_RPC_URL
+const MUMBAI_RPC_URL = process.env.MUMBAI_RPC_URL
 const MNEMONIC = process.env.MNEMONIC
 const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY
 
@@ -42,6 +43,13 @@ module.exports = {
         mnemonic: MNEMONIC
       },
       saveDeployments: true
+    },
+    mumbai:{
+      url: MUMBAI_RPC_URL,
+      accounts: {
+        mnemonic: MNEMONIC
+      },
+      saveDeployments: true
     }
   },
   etherscan: {
@@ -50,7 +58,7 @@ module.exports = {
   solidity: "0.8.0",
   namedAccounts:{
     deployer:{
-      default:0
+      default:1
     }
   }
 };

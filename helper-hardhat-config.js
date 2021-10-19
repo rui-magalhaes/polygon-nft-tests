@@ -7,6 +7,10 @@ const networkConfig = {
     },
     5:{
         name: 'goerli'
+    },
+    80001:
+    {
+        name: 'mumbai',
     }
 }
 
